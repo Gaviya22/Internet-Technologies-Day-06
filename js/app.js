@@ -88,11 +88,11 @@ let heading = document.getElementById("heading");
 
 let number = 0;
 function changeHeading1() {
-    heading.innerText = "Gavindu"+number++;
+    heading.innerText = "Gavindu"+(++number);
     console.log("Clicked");
 }
 
 function changeHeading2() {
-    heading.innerText = "Gavindu"+number--;
+    heading.innerText = "Gavindu"+(--number);
     console.log("Clicked");
 }
