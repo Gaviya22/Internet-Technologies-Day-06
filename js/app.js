@@ -77,6 +77,22 @@ console.log(document.title);
 
 let heading = document.getElementById("heading");
 
-heading.innerText = "Gavindu";
+// heading.innerText = "Gavindu";
 
 // console.log(heading.);
+
+// function changeHeading() {
+//     heading.innerText = "Gavindu";
+//     console.log("Clicked");
+// }
+
+let number = 0;
+function changeHeading1() {
+    heading.innerText = "Gavindu"+number++;
+    console.log("Clicked");
+}
+
+function changeHeading2() {
+    heading.innerText = "Gavindu"+number--;
+    console.log("Clicked");
+}
