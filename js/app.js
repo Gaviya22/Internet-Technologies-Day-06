@@ -72,10 +72,10 @@
 
 // document.write("<h2>Hello, World! 02</h2>");
 
-console.log(document.title);
+// console.log(document.title);
 
 
-let heading = document.getElementById("heading");
+// let heading = document.getElementById("heading");
 
 // heading.innerText = "Gavindu";
 
@@ -86,13 +86,80 @@ let heading = document.getElementById("heading");
 //     console.log("Clicked");
 // }
 
-let number = 0;
-function changeHeading1() {
-    heading.innerText = "Gavindu"+(++number);
-    console.log("Clicked");
-}
+// let number = 0;
+// function changeHeading1() {
+//     heading.innerText = "Gavindu"+(++number);
+//     console.log("Clicked");
+// }
 
-function changeHeading2() {
-    heading.innerText = "Gavindu"+(--number);
-    console.log("Clicked");
+// function changeHeading2() {
+//     heading.innerText = "Gavindu"+(--number);
+//     console.log("Clicked");
+// }
+
+// function changeHeading() {
+
+//     let txtInput = document.getElementById("inputText");
+
+//     let userInput = txtInput.value;
+
+//     console.log(userInput);
+
+//     let heading = document.getElementById("heading");
+
+//     heading.innerText=userInput;
+
+// }
+
+// function changeHeading1() {
+
+//     let txtInput1 = document.getElementById("inputText01");
+//     let txtInput2 = document.getElementById("inputText02");
+
+//     let number1 = Number(txtInput1.value);
+//     let number2 = Number(txtInput2.value);
+
+//     let answer = number1 + number2;
+
+//     let heading = document.getElementById("heading");
+
+//     heading.innerText = answer;
+// }
+
+// function changeHeading2() {
+
+//     let txtInput1 = document.getElementById("inputText01");
+//     let txtInput2 = document.getElementById("inputText02");
+
+//     let number1 = Number(txtInput1.value);
+//     let number2 = Number(txtInput2.value);
+
+//     let answer = number1 - number2;
+
+//     let heading = document.getElementById("heading");
+
+//     heading.innerText = answer;
+// }
+
+let customerList = [];
+
+function btnAddCustomerOnAction(){
+    let txtName = document.getElementById("txtName").value;
+    let txtAddress = document.getElementById("txtAddress").value;
+    let txtAge = document.getElementById("txtAge").value;
+    let txtEmail = document.getElementById("txtEmail").value;
+    let txtSalary = document.getElementById("txtSalary").value;
+
+    let customer={
+        name:txtName,
+        address:txtAddress,
+        age:txtAge,
+        email:txtEmail,
+        salary:txtSalary
+    }
+
+    customerList.push(customer);
+
+    console.log(customerList);
+      
 }
