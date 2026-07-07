@@ -151,7 +151,7 @@ function btnAddCustomerOnAction(){
     let txtSalary = document.getElementById("txtSalary").value;
 
     let customer={
-        name:txtName,
+        name:txtName
         address:txtAddress,
         age:txtAge,
         email:txtEmail,
