@@ -155,7 +155,7 @@ function btnAddCustomerOnAction(){
         address:txtAddress,
         age:txtAge,
         email:txtEmail,
-        salary:txtSalary
+        salary:txtSalar
     }
 
     customerList.push(customer);
