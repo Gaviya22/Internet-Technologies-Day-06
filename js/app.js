@@ -183,6 +183,6 @@ function loadTable(){
 
     tblCustomers.innerHTML=body;
 
-    console.log(tblCustomers)
+    console.log(tblCustomers);
     
 }
