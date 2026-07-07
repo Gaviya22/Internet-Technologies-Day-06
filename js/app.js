@@ -159,6 +159,7 @@ function btnAddCustomerOnAction(){
     }
 
     customerList.push(customer);
+    loadTable();
 
     console.log(customerList);
       
@@ -167,13 +168,20 @@ function btnAddCustomerOnAction(){
 function loadTable(){
     let tblCustomers = document.getElementById("tblCustomers");
 
-    tblCustomers.innerHTML+=`<tr>
-            <td>Saman</td>
-            <td>Walana</td>
-            <td>15</td>
-            <td>saman@email.com</td>
-            <td>750000</td>
-        </tr>`
+    let body ="";
+
+    for(let i =0; i<customerList.length; i++){
+            body +=
+                    `<tr>
+                        <td>${customerList[i].name}</td>
+                        <td>${customerList[i].address}</td>
+                        <td>${customerList[i].age}</td>
+                        <td>${customerList[i].email}</td>
+                        <td>${customerList[i].salary}</td>
+                    </tr>`;
+    }
+
+    tblCustomers.innerHTML=body;
 
     console.log(tblCustomers);
     
