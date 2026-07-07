@@ -154,7 +154,7 @@ function btnAddCustomerOnAction(){
         name:txtName,
         address:txtAddress,
         age:txtAge,
-        email:txtEmail
+        email:txtEmail,
         salary:txtSalary
     }
 
