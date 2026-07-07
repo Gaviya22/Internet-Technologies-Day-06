@@ -152,7 +152,7 @@ function btnAddCustomerOnAction(){
 
     let customer={
         name:txtName,
-        address:txtAddress,
+        address:txtAddress
         age:txtAge,
         email:txtEmail,
         salary:txtSalary
