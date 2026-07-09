@@ -148,7 +148,7 @@ function btnAddCustomerOnAction(){
     let txtAddress = document.getElementById("txtAddress").value;
     let txtAge = document.getElementById("txtAge").value;
     let txtEmail = document.getElementById("txtEmail").value;
-    let txtSalary = document.getElementById("txtSalary").value
+    let txtSalary = document.getElementById("txtSalary").value;
 
     let customer={
         name:txtName,
